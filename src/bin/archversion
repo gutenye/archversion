@@ -229,7 +229,7 @@ def command_update(args, vctrl):
     # compare version
     if pkgver == upver:
         print("Version are the same. Do nothing!")
-        return
+        exit 1
     # update version with upstream
     pkgbuild_set_version(args.path, upver)
     # update checksum
